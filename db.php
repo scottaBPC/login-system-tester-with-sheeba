@@ -18,7 +18,7 @@ foreach ($_SERVER as $key => $value) {
     $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
 
-$link = mysqli_connect($connectstr_dbhost, $connectstr_dbusername, $connectstr_dbpassword,$connectstr_dbname);
+$link = mysqli_connect("tcp:sheebaserver.database.windows.net,1433", "lynandal@sheebaserver", "Lindy8656","testtablewithSheeba");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
