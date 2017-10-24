@@ -1,6 +1,6 @@
 <?php
 /* Database connection settings */
-$host = 'sqlsrv:server = tcp:sheebaserver.database.windows.net,1433';
+$host = 'MYSQLCONNSTR_localdb';
 $user = 'lynandal@sheebaserver';
 $pass = 'Lindy8656';
 $db = 'testtablewithSheeba';
